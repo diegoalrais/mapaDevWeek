@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight:400;
+}
+
+html{
+    background: linear-gradient(#87CEFA, #4169E1);
+    min-height: 100%;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    min-height: 100%;
+}
+
+.txtCabecalho{
+    color: #000;
+    margin: 10pt;
+    font-size: 50pt;
+    text-shadow: 10px 10px 5px #fff;
+    text-decoration-style: solid;
+}
+
+header{
+    position: relative;
+}
+
+#menu ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    text-align: right;
+
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20pt;
+    
+}
+
+#menu a{
+    color: white;
+}
+
+#menu a:hover {
+    background: blue;
+    color: white;
+    text-decoration: solid;
+}
+
+h2{
+    margin-top: 30px;
+    color: white;
+    ;
+}
+
+.produtos{
+     margin: 25px;
+        
+ }
+
+ ol{
+    position: absolute;
+    column-count: 3;
+    margin-top: 10px;
+    margin-right: 10pt;
+    padding: 10px;
+
+}
+
+.produtos ol li{
+    margin: 30px;
+    list-style: none;        
+}
+
+img {
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+    margin: 10px;
+}
+
+li #descricao{
+    color: white;
+    text-align: justify;
+}
+
+.btComprar{
+    background: blue;
+    color: white;
+    text-align: center;
+    text-decoration-style: solid;
+    
+}
+
+.btComprar:hover{
+    background: yellow;
+    color: black;
+    text-decoration-style: solid;
+}
+
+.rodape{
+	position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+@media(max-width: 1140px){
+    .faq{
+        flex-direction: column;
+        width: 90%;
+    }
+    .faq .conteudo{
+        width: 100%;
+    }
+    .faq .conteudo h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .faq .itens{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .faq .itens .pergunta{
+        font-size: 16px;
+    }
+    .faq .ilustracao{
+        width: 40%;
+        left: 0;
+        margin: 30px 0;
+    }
+
+}
+
+@media(max-width: 450px){
+    .faq{
+        height: 540px;
+    }
+
+}

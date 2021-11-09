@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight:400;
+}
+
+html{
+    background: linear-gradient(#87CEFA, #4169E1);
+    min-height: 100%;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    min-height: 100%;
+}
+header {
+    position: relative;
+  }
+  
+.txtCabecalho{
+    color: #000;
+    margin: 10pt;
+    font-size: 50pt;
+    text-shadow: 10px 10px 5px #fff;
+    text-decoration-style: solid;
+}
+#menu ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    text-align: right;
+
+  }
+#menu ul li {
+    display: inline;
+    margin-right: 20pt;
+    
+}
+
+#menu a{
+    color: white;
+}
+#menu a:hover {
+    background: blue;
+    color: white;
+    text-decoration: solid;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.faq{
+    width: 65%;
+    min-height: 450px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.faq .ilustracao {
+    position: relative;
+    left: -120px;
+    width: 50%;
+    margin: 50px 0;
+}
+
+.faq .conteudo{
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+.faq .conteudo h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.faq .conteudo .itens{
+    list-style-type: none;
+}
+
+.faq .conteudo .itens .item{
+    cursor: pointer;
+    background-image: url("../imagens/icone-seta-pra-baixo.png");
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.faq .conteudo .itens .item:last-child{
+    border-bottom: none;
+}
+
+.item .pergunta{
+    padding-bottom: 15px;
+    font-size: 18px;
+    width: 90%;
+    transition: 0.2s ease;
+}
+
+.item .pergunta:hover{
+    color: #f47c57;
+}
+
+.item .resposta{
+    display: none;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+.link{
+    color: brown;
+    text-decoration-style: solid;
+}
+.link:hover{
+    color: blue
+}
+
+footer{
+	position: absolute;
+    bottom: 50;
+    color: #fff;
+    background-color: #4169E1;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+
+
+/***  ESTILO DO ITEM ATIVO *********/
+.faq .itens .item.ativo h2 {
+    font-weight: 700;
+}
+
+.faq .itens .item.ativo .resposta{
+    display: block;
+}
+.faq .itens .item.ativo {
+    background-image: url('../imagens/icone-seta-pra-cima.png');
+}
+/* ************************************** */
+
+@media(max-width: 1140px){
+    .faq{
+        flex-direction: column;
+        width: 90%;
+    }
+    .faq .conteudo{
+        width: 100%;
+    }
+    .faq .conteudo h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .faq .itens{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .faq .itens .pergunta{
+        font-size: 16px;
+    }
+    .faq .ilustracao{
+        width: 40%;
+        left: 0;
+        margin: 30px 0;
+    }
+
+}
+
+@media(max-width: 450px){
+    .faq{
+        height: 540px;
+    }
+
+}
